@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+         
+        
+        <changeSet id="pgg-16-01-2021-01" author="pandurang">
+        <comment>Config data</comment>
+      <sql splitStatements="true" stripComments="true">
+            INSERT INTO user(id) VALUES('1');
+            INSERT INTO user(id) VALUES('2');
+            INSERT INTO friend(user_id,name,phone_number) VALUES('1','Mary','1287348763');
+            INSERT INTO friend(user_id,name,phone_number) VALUES('2','Jane','09890349893');
+            INSERT INTO friend(user_id,name,phone_number) VALUES('1','Bob','1212098098');
+        </sql>
+    </changeSet>
+</databaseChangeLog>
